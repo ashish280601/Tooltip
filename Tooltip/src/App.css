@@ -1,0 +1,82 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+h3{
+  color: grey;
+  border-bottom: 2px dashed grey;
+}
+.tooltip_box{
+
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  border-radius: 10px;
+
+  
+ 
+}
+
+.tooltip_sec h3{
+  margin-right: 40px;
+}
+
+
+.tooltip_sec{
+  display: flex;
+  align-items: center; 
+}
+.tooltip_sec .tooltip_box p{
+  margin: 6px;
+}
+.tooltip_sec .tooltip_box::after{
+  content: " ";
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 18px solid #000;
+  border-bottom: 15px solid transparent;
+  position: absolute;
+  left: -17px;
+  top: 15px;
+}
